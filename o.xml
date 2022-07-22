@@ -1,0 +1,31 @@
+<?xml versi on="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="Flamingo-lavender"
+                fetch="https://github.com/Flamingo-lavender"
+                revision="refs/heads/sapphire" />
+        <remote name="xenxynon"
+                fetch="https://github.com/xenxynon" />
+        <remote name="XS"
+                fetch="https://github.com/XenStuff" />
+        <remote name="lab"
+                fetch="https://github.com/xenxynon-lab-404"
+                revision="refs/heads/shinka" />
+
+        <!-- Stuff -->
+        <project path="hardware/qcom/display" name="display-hal" revision="12-caf" remote="xenxynon" />
+        <project path="hardware/qcom/media" name="hardware_qcom_media" revision="A12.1" remote="Flamingo-lavender" />
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" revision="pa-audio" remote="Flamingo-lavender" />
+        <project path="keys" name="certs" remote="xenxynon" revision="flamingo" />
+        <!-- Trees -->
+        <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="Flamingo-lavender" />
+        <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="Flamingo-lavender" />
+        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="Flamingo-lavender" />
+        <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="Flamingo-lavender" />
+        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" revision="A12" remote="xenxynon" />
+        <project path="kernel/xiaomi/sdm660" name="projects-nexus/android_xtreme_kernel_lavender" remote="github" revision="eas-qti-x1" clone-depth="1" />
+        <!-- remove & reclone -->
+        <remove-project name="platform/vendor/qcom-opensource/usb" />
+        <project path="vendor/qcom-opensource/usb" name="usb" remote="lab" clone-depth="1" >
+        <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
+        </project>
+</manifest>
