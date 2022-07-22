@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <remote name="Flamingo-lavender"
-                fetch="https://github.com/Flamingo-lavender" />
+                fetch="https://github.com/Flamingo-lavender"
+                revision="refs/heads/A12.1" />
         <remote name="xenxynon"
                 fetch="https://github.com/xenxynon" />
         <remote name="XS"
