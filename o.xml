@@ -14,7 +14,7 @@
         <!-- Stuff -->
         <project path="hardware/qcom/display" name="display-hal" revision="12-caf" remote="xenxynon" />
         <project path="hardware/qcom/media" name="hardware_qcom_media" revision="A12.1" remote="Flamingo-lavender" />
-        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" revision="pa-audio" remote="Flamingo-lavender" />
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" revision="A12.1" remote="Flamingo-lavender" />
         <project path="keys" name="certs" remote="xenxynon" revision="flamingo" />
         <!-- Trees -->
         <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="Flamingo-lavender" />
